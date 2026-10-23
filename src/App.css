@@ -1,9 +1,9 @@
 /* COLORING */
 :root {
   /* 🔵 PRIMARY BRAND COLORS */
-  --brand-primary: #c5992a; /* Deep Gold/Bronze */
-  --brand-hover: #78350f;   /* Dark  */
-  --product-card: #eccf88; /* Light Slate for product cards */
+  --brand-primary: #c1121f; /* MAIN COLOR */
+  --brand-hover: #780000;   /* when clicked  */
+  --product-card: #fdf0d5; /* product cards */
   
   /* 🟢 ACTION COLORS (WhatsApp Green) */
   --action-success: #25D366;
@@ -64,6 +64,12 @@ body {
   z-index: 2;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+#phone-number{
+  color: #25D366; /* WhatsApp green */
+  font-weight: bold;
+  font-size: 2.1rem;
 }
 
 /* Flexbox layout for mobile (stacked) to desktop (side-by-side) */

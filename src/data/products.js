@@ -454,7 +454,7 @@ export const products = [
   {
     "id": "GELANG",
     "name": "GELANG",
-    "image": "/images/lainnya.png",
+    "image": "/images/lainnya.jpg",
     "description": "Tersedia berbagai varian dan ukuran.",
     "category": "Lainnya",
     "variants": [
@@ -1090,16 +1090,6 @@ export const products = [
     ]
   },
   {
-    "id": "SPUL",
-    "name": "SPUL",
-    "image": "/images/gerinda.png",
-    "description": "Tersedia berbagai varian dan ukuran.",
-    "category": "Gerinda",
-    "variants": [
-      "GRINDA MAKITA"
-    ]
-  },
-  {
     "id": "TAIYO",
     "name": "TAIYO",
     "image": "/images/gerinda.png",
@@ -1188,17 +1178,6 @@ export const products = [
       "150 X 6 MTR",
       "200 X 6 MTR",
       "250 X 6 MTR"
-    ]
-  },
-  {
-    "id": "WHITE",
-    "name": "WHITE",
-    "image": "/images/kawat.png",
-    "description": "Tersedia berbagai varian dan ukuran.",
-    "category": "Kawat Las",
-    "variants": [
-      "HORSE",
-      "HORSE STAINLESS"
     ]
   },
   {

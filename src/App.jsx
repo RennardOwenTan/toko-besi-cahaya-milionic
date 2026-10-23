@@ -60,6 +60,17 @@ export default function App() {
     processedProducts = processedProducts.filter(item => item.category === filterCategory);
   }
 
+  processedProducts.sort((a, b) => {
+    const aIsLainnya = a.image === "/images/lainnya.jpg";
+    const bIsLainnya = b.image === "/images/lainnya.jpg";
+    
+    if (aIsLainnya && !bIsLainnya) return 1;  // Move 'a' down
+    if (!aIsLainnya && bIsLainnya) return -1; // Move 'b' down
+    
+    // THE FIX: If both items have the same image status, sort them alphabetically by name
+    return a.name.localeCompare(b.name);
+  });
+
   return (
     <div className="app-container">
       <header className="hero">
@@ -70,7 +81,7 @@ export default function App() {
             <h3>PT. Mitra Milionic Makmur</h3>
             <h1>Toko Besi Cahaya Milionic</h1>
             <h5>Toko besi dengan catalogue terlengkap di seluruh Indonesia!</h5>
-            <h5>Hubungi +62 813-1980-7138 untuk informasi lebih lanjut</h5>
+            <h5>Hubungi <span id="phone-number">0813-1980-7138</span> untuk informasi lebih lanjut</h5>
           </div>
 
           <div className="hero-map">
